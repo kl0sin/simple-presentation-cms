@@ -1,0 +1,23 @@
+@import 'variables';
+
+.avaiable-presentations {
+  padding: $avaiable-presentation-padding;
+  h3 {
+    color: $avaiable-presentation-h3-color;
+    text-transform: capitalize;
+    font-size: $avaiable-presentation-h3-font-size;
+    margin: $avaiable-presentation-h3-margin;
+  }
+  .presentation {
+    &__item {
+      cursor: pointer;
+      background-color: $main;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: .9em;
+      line-height: .9em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+}

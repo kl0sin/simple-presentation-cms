@@ -1,0 +1,89 @@
+@import 'variables';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: calc(50vh - 340px);
+  &__container {
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 5px 5px 30px 0 rgba(0,0,0,0.5);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__info {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 32px;
+    color: #fff;
+  }
+  &__label {
+    text-align: left;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #7f7f7f;
+  }
+  &__input {
+    padding: 10px 0;
+    border: 0;
+    border-bottom: 1px solid #000;
+    margin: 0 0 25px;
+    font-size: 16px;
+    outline: none;
+    &::placeholder {
+      padding-left: 10px;
+      font-style: italic;
+      font-size: 10px;
+      color: #aeaeae;
+    }
+    &:focus {
+      border-bottom: 2px solid $main;
+    }
+    &--invalid {
+      margin: 0 0 5px;
+      color: red;
+      outline: red;
+      border-color: red;
+      &:focus {
+        border-bottom: 2px solid red;
+      }
+    }
+  }
+  &__error {
+    text-align: left;
+    font-style: italic;
+    color: red;
+    font-size: 13px;
+    margin: 0 0 5px;
+  }
+  button {
+    background-color: $main;
+    color: #fff;
+    font-weight: 600;
+    border: 0;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 15px 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    &:hover {
+      transition: .2s;
+      background-color: lighten($main, 10);
+    }
+  }
+  &__bottom-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    a {
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

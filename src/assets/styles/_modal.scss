@@ -1,0 +1,29 @@
+@import 'variables';
+
+.modal {
+  position: fixed;
+  background-color: $modal-background;
+  width: 500px;
+  left: calc(50% - 250px);
+  top: 30%;
+  -webkit-box-shadow: $modal-box-shadow;
+  box-shadow: $modal-box-shadow;
+  &__content {
+    text-align: left;
+    display: block;
+    width: 100%;
+    padding: $modal-content-padding;
+    color: $modal-content-color;
+    position: relative;
+    footer {
+      text-align: right;
+      margin-top: $modal-footer-margin;
+      display: block;
+      button {
+        font-size: $modal-footer-button-size;
+        margin-left: $modal-footer-button-margin;
+      }
+    }
+  }
+
+}

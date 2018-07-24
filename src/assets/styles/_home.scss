@@ -1,0 +1,21 @@
+@import 'variables';
+
+.home {
+  width: 60%;
+  margin: 0 auto;
+  .presentation {
+    margin-top: 60px;
+    background-color: $white;
+    width: 100%;
+    box-shadow: 5px 5px 30px 0 rgba(0,0,0,0.5);
+    padding: 30px;
+    h2 {
+      font-size: 1.4em;
+      font-weight: 600;
+      padding-bottom: 30px;
+    }
+    &__description {
+      text-align: left;
+    }
+  }
+}

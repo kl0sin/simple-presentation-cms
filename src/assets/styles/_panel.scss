@@ -1,0 +1,27 @@
+@import 'variables';
+
+.panel {
+  color: #fff;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  &--left {
+    width: 300px;
+    min-height: calc(100vh - #{$navigation-height});
+    background-color: #fff;
+    box-shadow: inset 0px 5px 5px -3px rgba(0,0,0,.5);
+    padding: 30px 15px 15px;
+    h3 {
+      color: #000;
+    }
+  }
+  &--right {
+    width: calc(100% - 300px);
+  }
+  &__label {
+    margin-top: 20px;
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+

@@ -1,0 +1,34 @@
+@import 'variables';
+
+.menu-links {
+  padding: $menu-links-padding;
+  span {
+    display: block;
+    margin: $menu-links-margin;
+  }
+  &__inputs {
+    input {
+      font-size: .8em;
+      padding: 0 0 5px;
+      border: 0;
+      border-bottom: 1px solid #000;
+      outline: none;
+      width: calc(100% - 150px);
+      color: $dove-gray;
+      position: relative;
+      font-style: italic;
+      display: block;
+      margin: 0 0 8px;
+      &:focus {
+        -webkit-box-shadow: inset 0px -10px 15px -13px #6200b3;
+        box-shadow: inset 0px -10px 15px -13px #6200b3;
+        border-bottom: 1px solid #6200b3;
+      }
+    }
+  }
+  button {
+    span {
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@import 'variables';
+
+.snippet {
+  background: $snippet-background;
+  border: $snippet-border;
+  margin: 15px 0;
+  &__filename {
+    display: block;
+    color: $snippet-filename-color;
+    padding: $snippet-filename-padding;
+    font-weight: 600;
+    font-style: italic;
+    text-align: left;
+    width: 100%;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: '';
+      display: block;
+      top: calc(50% - 8px);
+      right: 10px;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__label {
+    margin-left: $snippet-label-margin;
+    font-size: $snippet-label-font-size;
+    font-weight: 500;
+    color: $silver;
+    &:before {
+      content: '|'
+    }
+  }
+  pre {
+    white-space: normal;
+  }
+  code {
+    white-space: pre;
+    opacity: 0;
+    height: 0;
+    transition: .3s;
+    padding: 0;
+    overflow: hidden;
+    &.collapsed {
+      height: auto;
+      opacity: 1;
+      padding: $snippet-code-padding;
+      overflow-x: auto;
+    }
+  }
+}

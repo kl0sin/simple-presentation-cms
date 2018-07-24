@@ -1,0 +1,94 @@
+@import 'variables';
+
+.card {
+  color: #000;
+  padding: 0 0 0 25px;
+  &:not(:first-of-type) {
+    margin-top: 10px;
+  }
+  &__tab {
+    cursor: pointer;
+    color: #000;
+    padding: 10px 10px 10px 25px;
+    position: relative;
+    display: inline-block;
+    &:before {
+      content: '';
+      display: inline-block;
+      border-left: 5px solid #000;
+      border-bottom: 5px solid transparent;
+      border-top: 5px solid transparent;
+      position: absolute;
+      left: 10px;
+      transition: .3s;
+    }
+    &--active {
+      &:before {
+        transform: rotate(90deg);
+      }
+    }
+  }
+  &__content {
+    display: none;
+    height: 0;
+    transition: .3s;
+    padding: 0 15px;
+    &--active {
+      height: auto;
+      display: block;
+    }
+  }
+  &__item {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 1em;
+    span {
+      font-size: .9em;
+      width: 150px;
+      display: inline-block;
+      text-align: right;
+      padding-right: 20px;
+      vertical-align: top;
+      font-weight: 600;
+    }
+    input {
+      font-size: .8em;
+      padding: 0 0 5px;
+      border: 0;
+      border-bottom: 1px solid #000;
+      outline: none;
+      width: calc(100% - 150px);
+      color: #616161;
+      position: relative;
+      font-style: italic;
+      &::placeholder {
+        padding: 5px 0 0 5px;
+        font-style: italic;
+        font-size: 10px;
+        line-height: 10px;
+        color: #aeaeae;
+      }
+      &:focus {
+        box-shadow: inset 0px -10px 15px -13px $main;
+        border-bottom: 1px solid $main;
+      }
+    }
+    .item {
+      &__label {
+        height: 22px;
+        text-align: start;
+        font-weight: normal;
+        color: #616161;
+      }
+    }
+  }
+  &__footer {
+    text-align: right;
+    padding: 10px 0;
+    button {
+      font-size: .9em;
+      margin-left: 10px;
+    }
+  }
+}

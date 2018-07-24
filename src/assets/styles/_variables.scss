@@ -1,0 +1,74 @@
+// COLORS
+$main: #6200b3;
+$tolopea:#230040;
+$secondary: #2c3e50;
+$dove-gray: #616161;
+$silver: #bbbbbb;
+$white: #fff;
+$black: #000;
+
+// COMPONENTS OPTIONS
+
+// 1. NAVIGATION
+$navigation-height: 60px;
+
+// 2. AVAIABLE PRESENTATIONS
+$avaiable-presentation-padding: 30px 15px 15px;
+$avaiable-presentation-h3-color: $black;
+$avaiable-presentation-h3-font-size: 1.2em;
+$avaiable-presentation-h3-margin: 0 0 20px;
+
+// 3. MENU LINKS
+$menu-links-padding: 10px 10px 10px 25px;
+$menu-links-margin: 0 0 10px;
+
+// 4. NO ACTIVE PRESENTATION
+$no-active-presentation-margin: 50px auto;
+$no-active-presentation-padding: 30px;
+$no-active-presentation-label-font-size: 1.7em;
+$no-active-presentation-label-margin: 0 0 40px;
+$no-active-presentation-footer-margin: 40px 0 0;
+$no-active-presentation-icon-size: 7em;
+$no-active-presentation-icon-color: $secondary;
+
+// 5. PRESENTATION CARD
+$presentation-card-border: 2px solid $main;
+$presentation-card-margin: 0 0 15px;
+$presentation-card-name-background: $main;
+$presentation-card-description-color: $secondary;
+$presentation-card-description-padding: 10px 5px;
+$presentation-card-description-font-size: .8em;
+$presentation-card-footer-padding: 10px;
+$presentation-card-footer-color: $secondary;
+
+// 6. PRESENTATION MODAL
+$modal-background: $white;
+$modal-box-shadow: 5px 5px 30px 0 rgba(0, 0, 0, 0.5);
+$modal-content-padding: 30px;
+$modal-content-color: $secondary;
+$modal-footer-margin: 15px 0 0;
+$modal-footer-button-size: .9em;
+$modal-footer-button-margin: 0 0 0 10px;
+
+// 7. SNIPPET
+$snippet-background: $secondary;
+$snippet-border: 3px solid $secondary;
+$snippet-filename-color: $white;
+$snippet-filename-padding: 10px;
+$snippet-label-margin: 0 0 0 10px;
+$snippet-label-font-size: .9em;
+$snippet-code-padding: 15px;
+
+
+// 8. LOADER OPTIONS
+$loader-width: 100px;
+$loader-container-background: rgba(0, 0, 0, .7);
+$loader-label-color: $white;
+$loader-font-size: 2.5em;
+$loader-bounce-width: 18px;
+$loader-bounce-height: 18px;
+$loader-bounce-color: $white;
+$loader-bounce-animation: 1.2s infinite ease-in-out both;
+$loader-margin: 0 5px;
+$loader-bounce-1-delay: -0.32s;
+$loader-bounce-2-delay: -0.16s

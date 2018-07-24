@@ -1,0 +1,20 @@
+@import 'variables';
+
+.no-presentation {
+  margin: $no-active-presentation-margin;
+  width: 100%;
+  background-color: $white;
+  padding: $no-active-presentation-padding;
+  &__label {
+    font-size: $no-active-presentation-label-font-size;
+    display: block;
+    margin-bottom: $no-active-presentation-label-margin;
+    &--footer {
+      margin: $no-active-presentation-footer-margin
+    }
+  }
+  i {
+    font-size: $no-active-presentation-icon-size;
+    color: $no-active-presentation-icon-color;
+  }
+}

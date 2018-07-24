@@ -1,0 +1,44 @@
+@import 'variables';
+
+.btn {
+  display: inline-block;
+  align-items: center;
+  border: 0;
+  padding: 3px;
+  background-color: #fff;
+  outline: none;
+  transition: 0.3s;
+  span {
+    margin-left: 5px;
+    text-transform: uppercase;
+    color: #bababa;
+    font-weight: 600;
+  }
+  i {
+    color: #bababa;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  &--add {
+    &:hover {
+      span, i {
+        color: $main;
+      }
+    }
+  }
+  &--remove {
+    &:hover {
+      span, i {
+        color: #f08080;
+      }
+    }
+  }
+  &--active {
+    &:hover {
+      span, i {
+        color: #90ee90;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import 'variables';
+
+.presentation-card {
+  border: $presentation-card-border;
+  margin: $presentation-card-margin;
+  .card {
+    &__name {
+      background-color: $presentation-card-name-background;
+      width: 100%;
+      display: block;
+      padding: 10px;
+      font-weight: 600;
+    }
+    &__description {
+      background-color: #fff;
+      color: $presentation-card-description-color;
+      padding: $presentation-card-description-padding;
+      text-align: left;
+      font-size: $presentation-card-description-font-size;
+    }
+    &__footer {
+      padding: $presentation-card-footer-padding;
+      color: $presentation-card-footer-color;
+    }
+  }
+}
